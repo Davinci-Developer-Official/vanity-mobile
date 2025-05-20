@@ -4,7 +4,7 @@
     "slug": "vanity-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/logo/vanity_logo.png",
     "scheme": "vanitymobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

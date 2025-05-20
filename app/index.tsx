@@ -1,5 +1,7 @@
 import { Text, View } from "react-native";
 import{useState} from "react"
+import Welcome from "@/components/welcome"
+import WelcomeBack from "@/components/welcome-back";
 
 export default function Index() {
   const[loggedIn,setLoggedIn]=useState(false)
@@ -12,8 +14,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      {loggedIn?<View><Text>logged in</Text></View>:<View><Text>logged out</Text></View>}
+      {/* <Text>Edit app/index.tsx to edit this screen.</Text> */}
+      {loggedIn?<View><WelcomeBack/></View>:<View><Welcome/></View>}
     </View>
   );
 }
