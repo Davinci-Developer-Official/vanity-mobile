@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import { Link } from 'expo-router';
 
-const backgroundImage = require('@/assets/images/welcome2.jpg');
+const backgroundImage = require('@/assets/images/background1.jpg');
 
 // Dummy user data (replace with actual user state or props)
 const userName = 'John Doe';
 
-const WelcomeBack = () => {
+const WelcomeBack = ({user}:{user:string}) => {
   return (
     <ImageBackground
       source={backgroundImage}
@@ -24,7 +24,7 @@ const WelcomeBack = () => {
       <View style={styles.overlay}>
         <Text style={styles.title}>Welcome Back</Text>
         <Text style={styles.subtitle}>
-          Hello <Text style={styles.userName}>{userName}</Text>, we’re glad to have you back.
+          Hello <Text style={styles.userName}>{user}</Text>, we’re glad to have you back.
         </Text>
         <Text style={styles.subnote}>
           Continue where you left off and manage your car loan applications seamlessly.

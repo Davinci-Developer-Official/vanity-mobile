@@ -4,7 +4,8 @@ import Welcome from "@/components/welcome"
 import WelcomeBack from "@/components/welcome-back";
 
 export default function Index() {
-  const[loggedIn,setLoggedIn]=useState(false)
+  const[loggedIn,setLoggedIn]=useState(true)
+  const[user,setUser]=useState<string>("John Doe")
 
   return (
     <View
@@ -15,7 +16,7 @@ export default function Index() {
       }}
     >
       {/* <Text>Edit app/index.tsx to edit this screen.</Text> */}
-      {loggedIn?<View><WelcomeBack/></View>:<View><Welcome/></View>}
+      {loggedIn?<View><WelcomeBack user={user} /></View>:<View><Welcome/></View>}
     </View>
   );
 }
