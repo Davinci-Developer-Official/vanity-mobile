@@ -1,0 +1,121 @@
+{
+  "owners": [
+    {
+      "id": 1,
+      "first-name": "John",
+      "middle-name": "Stewart",
+      "last-name": "Mwangi",
+      "phonenumber": "011234221332",
+      "vehicle": {
+        "reg-no": "KCW 221A",
+        "model": "Audi Q5"
+      },
+      "trustee": {
+        "full-names": "Brian Chogoria Mbui",
+        "id-no": "3362168213",
+        "phone-number": "+810821334893421",
+        "finger-print": "hh1.rsc"
+      }
+    },
+    {
+      "id": 2,
+      "first-name": "Alice",
+      "middle-name": "Wanjiru",
+      "last-name": "Kimani",
+      "phonenumber": "0711223344",
+      "vehicle": {
+        "reg-no": "KDB 332B",
+        "model": "Toyota Vitz"
+      },
+      "trustee": {
+        "full-names": "David Mugo Kariuki",
+        "id-no": "2154637891",
+        "phone-number": "+254721334455",
+        "finger-print": "fp2.rsc"
+      }
+    },
+    {
+      "id": 3,
+      "first-name": "James",
+      "middle-name": "Kip",
+      "last-name": "Langat",
+      "phonenumber": "0799887766",
+      "vehicle": {
+        "reg-no": "KCH 889D",
+        "model": "Mazda CX-5"
+      },
+      "trustee": {
+        "full-names": "Lucy Wairimu Njeri",
+        "id-no": "3021457896",
+        "phone-number": "+254733221199",
+        "finger-print": "fp3.rsc"
+      }
+    },
+    {
+      "id": 4,
+      "first-name": "Sarah",
+      "middle-name": "Atieno",
+      "last-name": "Ouma",
+      "phonenumber": "0700123456",
+      "vehicle": {
+        "reg-no": "KBX 112C",
+        "model": "Honda Fit"
+      },
+      "trustee": {
+        "full-names": "Peter Otieno Odhiambo",
+        "id-no": "2147852369",
+        "phone-number": "+254700556677",
+        "finger-print": "fp4.rsc"
+      }
+    },
+    {
+      "id": 5,
+      "first-name": "Kevin",
+      "middle-name": "Mutua",
+      "last-name": "Ndolo",
+      "phonenumber": "0722789456",
+      "vehicle": {
+        "reg-no": "KCU 772Z",
+        "model": "Nissan Note"
+      },
+      "trustee": {
+        "full-names": "Grace Muthoni Wambui",
+        "id-no": "2277812365",
+        "phone-number": "+254722444111",
+        "finger-print": "fp5.rsc"
+      }
+    }
+  ],
+  "business": [
+    {
+      "id": 1,
+      "business-name": "Joy Ventures",
+      "business-location": "Moi Avenue Flr 3",
+      "business-type": "Boutique"
+    },
+    {
+      "id": 2,
+      "business-name": "Nairobi Tech Hub",
+      "business-location": "Kilimani, Nairobi",
+      "business-type": "Tech Startup"
+    },
+    {
+      "id": 3,
+      "business-name": "Mavuno Groceries",
+      "business-location": "Mombasa Road",
+      "business-type": "Retail"
+    },
+    {
+      "id": 4,
+      "business-name": "Sunset Spa",
+      "business-location": "Ngong Road",
+      "business-type": "Salon & Spa"
+    },
+    {
+      "id": 5,
+      "business-name": "Bakers Delight",
+      "business-location": "Thika Superhighway",
+      "business-type": "Bakery"
+    }
+  ]
+}

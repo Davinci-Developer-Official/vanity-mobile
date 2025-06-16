@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,7 @@ import {
   ScrollView,
   ImageBackground,
   Modal,
+ 
 } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Link } from 'expo-router';
@@ -14,10 +15,11 @@ import AvatarHeader from '@/components/AvatarHeader';
 
 const background = require('@/assets/images/background1.jpg');
 
+
 export default function Home() {
   const user = 'John Doe';
   const [showEditModal, setShowEditModal] = useState(false);
-
+  
   return (
     <ImageBackground source={background} style={styles.background}>
       <ScrollView contentContainerStyle={styles.scroll}>

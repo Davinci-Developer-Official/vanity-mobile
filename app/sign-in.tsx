@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -6,33 +6,64 @@ import {
   TouchableOpacity,
   StyleSheet,
   ImageBackground,
+  // AppState,
+  // Alert,
 } from 'react-native';
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import { Link } from 'expo-router';
+// import { supabase } from '@/utils/supabase';
+import SignInComponent from "@/components/signIn"
 
 const backgroundImage = require('@/assets/images/background1.jpg');
 
+// AppState.addEventListener("change",(state)=>{
+//   if(state==="active"){
+//     supabase.auth.startAutoRefresh()
+//   }else{
+//     supabase.auth.stopAutoRefresh()
+//   }
+// })
+
 const SignIn = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [loading, setLoading] = useState(false)
+
+    // async function signIn(){
+    //   setLoading(true)
+    //   const {error} = await supabase.auth.signInWithPassword({
+    //     email:email,
+    //     password:password
+    //   })
+    //   if(error) Alert.alert(error.message)
+    //     setLoading(false)
+    // }
   return (
     <ImageBackground
       source={backgroundImage}
       style={styles.background}
       imageStyle={{ opacity: 0.85 }}
     >
-      <View style={styles.overlay}>
+      {/* <View style={styles.overlay}>
         <View style={styles.formContainer}>
           <Text style={styles.title}>Sign In</Text>
 
           <TextInput
             style={styles.input}
-            placeholder="Email or Username"
+            onChangeText={(text) => setEmail(text)}
+            value={email}
+            placeholder="email@address.com"
+            autoCapitalize={'none'}
             placeholderTextColor="#cfcfcf"
           />
           <TextInput
             style={styles.input}
             placeholder="Password"
             placeholderTextColor="#cfcfcf"
-            secureTextEntry
+            secureTextEntry={true}
+            onChangeText={(text) => setPassword(text)}
+            value={password}
+            autoCapitalize={'none'}
           />
 
           <TouchableOpacity style={styles.signInButton}>
@@ -60,12 +91,15 @@ const SignIn = () => {
 
           <View style={styles.signupPrompt}>
             <Text style={styles.promptText}> Don&apos;t have an account? </Text>
-            <Link href="/sign-up" style={styles.signUpLink}>
+            <Link href="/sign-up" style={styles.signUpLink} disabled={loading} onPress={()=>{
+              // signIn()
+              }} >
               Sign Up
             </Link>
           </View>
         </View>
-      </View>
+      </View> */}
+      {<SignInComponent/>}
     </ImageBackground>
   );
 };

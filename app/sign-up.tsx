@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -6,19 +6,48 @@ import {
   TouchableOpacity,
   StyleSheet,
   ImageBackground,
+  // Alert,
+  // AppState,
 } from 'react-native';
 import { Link } from 'expo-router';
+import SignUpComponent from "@/components/signUp"
+// import { supabase } from '@/utils/supabase';
 
 const backgroundImage = require('@/assets/images/background1.jpg');
 
+// AppState.addEventListener('change', (state) => {
+//   if (state === 'active') {
+//     supabase.auth.startAutoRefresh()
+//   } else {
+//     supabase.auth.stopAutoRefresh()
+//   }
+// })
+
 const SignUp = () => {
+   const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [loading, setLoading] = useState(false)
+
+  // async function signUpWithEmail() {
+  //   setLoading(true)
+  //   const {
+  //     data: { session },
+  //     error,
+  //   } = await supabase.auth.signUp({
+  //     email: email,
+  //     password: password,
+  //   })
+  //   if (error) Alert.alert(error.message)
+  //   if (!session) Alert.alert('Please check your inbox for email verification!')
+  //   setLoading(false)
+  // }
   return (
     <ImageBackground
       source={backgroundImage}
       style={styles.background}
       imageStyle={{ opacity: 0.85 }}
     >
-      <View style={styles.overlay}>
+      {/* <View style={styles.overlay}>
         <View style={styles.formContainer}>
           <Text style={styles.title}>Create Account</Text>
 
@@ -76,7 +105,8 @@ const SignUp = () => {
             </Link>
           </View>
         </View>
-      </View>
+      </View> */}
+      {<SignUpComponent/>}
     </ImageBackground>
   );
 };
